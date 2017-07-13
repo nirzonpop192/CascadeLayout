@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:cascade="http://schemas.android.com/apk/res/com.learn.faisal.cascadelayout"
 
     android:layout_width="match_parent"
@@ -10,22 +11,23 @@
     <com.learn.faisal.cascadelayout.view.CascadeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        cascade:horizontal_spacing="30dp"
-        cascade:vertical_spacing="10dp">
+        cascade:horizontal_spacing="5dp"
+        cascade:vertical_spacing="5dp">
 
-        <View
+       <View
             android:layout_width="100dp"
             android:layout_height="150dp"
+            cascade:layout_vertical_spacing="10dp"
             android:background="#FF0000" />
 
-        <View
+       <View
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:background="#0008ff" />
+            android:background="#00FF00" />
 
         <View
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:background="#00ff19" />
+            android:background="#0000FF" />
     </com.learn.faisal.cascadelayout.view.CascadeLayout>
-</RelativeLayout>
+</FrameLayout>
